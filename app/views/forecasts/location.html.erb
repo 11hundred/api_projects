@@ -1,8 +1,12 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Address to Weather</h1>
-  </div>
+<div class="<%= @my_weather_icon %>">
+
+<h1> The weather for <%= @street_address %> is <%= @my_weather.downcase %></h1><h1>Currently it is <%= @my_temp %> degrees F.</h1>
+<h6> <%= @long %> / <%= @lat %> / This is in <%= @country %></h6>
+
 </div>
+
+<hr width="100%">
+
 
 <div class="container">
   <div class="row">
