@@ -1,22 +1,25 @@
-<div class="<%= @my_weather_icon %>">
+
+<div class="wrapper <%= @my_weather_icon %>">
+
+<form action="/weather/" method="get">
+  Address: <input type="text" name="address"><br>
+  <input type="submit" value="Submit">
+</form>
+
 
 <h1> The weather for <%= @street_address %> is <%= @my_weather.downcase %></h1><h1>Currently it is <%= @my_temp %> degrees F.</h1>
 <h6> <%= @long %> / <%= @lat %> / This is in <%= @country %></h6>
 
-</div>
 
 <hr width="100%">
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
 
       <p class="lead"><a href="http://localhost:3000/weather/1600+Amphitheatre+Parkway,+Mountain+View,+CA">http://localhost:3000/weather/1600+Amphitheatre+Parkway,+Mountain+View,+CA</a></p>
 
       <p class="lead"><a href="http://localhost:3000/weather/450+N+Cityfront+Plaza+Dr+Chicago+IL+60611">http://localhost:3000/weather/450+N+Cityfront+Plaza+Dr+Chicago+IL+60611</a></p>
       <p class="lead"><a href="http://localhost:3000/weather/48+High+Street,+Auckland">http://localhost:3000/weather/48+High+Street,+Auckland</a></p>
 
-    </div>
-  </div>
+
 </div>
+    <div id="map-canvas"></div>

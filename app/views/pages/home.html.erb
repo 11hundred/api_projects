@@ -1,18 +1,19 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Address to Weather</h1>
-  </div>
-</div>
+<div class="wrapper <%= @my_weather_icon %>">
+    <h1>Enter an Address to search</h1>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
+	<form action="/weather/" method="get">
+	  Address: <input type="text" name="address"><br>
+	  <input type="submit" value="Submit">
+	</form>
+
+<hr width="100%">
+
+
 
       <p class="lead"><a href="http://localhost:3000/weather/1600+Amphitheatre+Parkway,+Mountain+View,+CA">http://localhost:3000/weather/1600+Amphitheatre+Parkway,+Mountain+View,+CA</a></p>
 
       <p class="lead"><a href="http://localhost:3000/weather/450+N+Cityfront+Plaza+Dr+Chicago+IL+60611">http://localhost:3000/weather/450+N+Cityfront+Plaza+Dr+Chicago+IL+60611</a></p>
       <p class="lead"><a href="http://localhost:3000/weather/48+High+Street,+Auckland">http://localhost:3000/weather/48+High+Street,+Auckland</a></p>
 
-    </div>
-  </div>
+
 </div>
