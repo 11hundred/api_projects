@@ -1,13 +1,12 @@
 
 <div class="wrapper <%= @my_weather_icon %>">
-
 <form action="/weather/" method="get">
   Address: <input type="text" name="address"><br>
   <input type="submit" value="Submit">
 </form>
 
 
-<h1> The weather for <%= @street_address %> is <%= @my_weather.downcase %></h1><h1>Currently it is <%= @my_temp %> degrees F.</h1>
+<h1> The weather for <%= @address %> is <%= @my_weather.downcase %></h1><h1>Currently it is <%= @my_temp %> degrees F.</h1>
 <h6> <%= @long %> / <%= @lat %></h6>
 
 
@@ -22,4 +21,4 @@
 
 
 </div>
-    <div id="map-canvas"></div>
+<div id="map-canvas"></div>
